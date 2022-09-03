@@ -3,7 +3,6 @@ int d = int.Parse(Console.ReadLine());
 
 //double minValue = -9;
 //double maxValue = 9;
-
 /*Console.WriteLine("Введите минимальное значение элемента: ");
 double mIV = double.Parse(Console.ReadLine());
 Console.WriteLine("Введите максимальное значение элемента: ");
@@ -15,11 +14,9 @@ Random rand = new Random();
 
 for (int i = 0; i < array.Length; ++i)
 {
-    array[i] = rand.Next(-9, 10) + rand.NextDouble();
+    array[i] = rand.Next(-9, 10) + rand.NextDouble(); //размерЭлементовУказанВскобках, Next(-99,100)-вещественные с двухзначной целой частью и т.д.
 
-}
-//Console.ReadLine();
-Console.WriteLine(string.Join(", ", array));
+}Console.WriteLine(string.Join(", ", array));
 Console.WriteLine();
 
 double min = array[0];
